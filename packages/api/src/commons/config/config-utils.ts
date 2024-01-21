@@ -6,11 +6,10 @@ const PROD_BASE_URL = 'https://petstore.swagger.io/v2/';
 const QA_BASE_URL = 'https://qa.petstore.swagger.io/v2/';
 
 function getTestEnv(): string {
-	const testEnv = process.env.TEST_ENV || TestEnv.PROD;
-	return testEnv;
+	return process.env.TEST_ENV || TestEnv.PROD;
 }
 
-function getBaseUrl(): string {
+export function getBaseUrl(): string {
 	let result = PROD_BASE_URL;
 	const testEnv = getTestEnv();
 	switch (testEnv) {

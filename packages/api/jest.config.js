@@ -6,14 +6,14 @@ module.exports = {
 	moduleNameMapper: {
 		'^@/(.*)$': '<rootDir>/src/$1'
 	},
-    transform: {
-        '\\.(js|ts)$': 'ts-jest',
-    },
+	transform: {
+		'\\.(js|ts)$': 'ts-jest'
+	},
 	moduleFileExtensions: ['ts', 'js', 'json'],
 	modulePathIgnorePatterns: ['<rootDir>/node_modules/'],
 	testMatch: ['<rootDir>/src/**/*.spec.ts'],
 	testPathIgnorePatterns: ['<rootDir>/node_modules/'],
-    setupFilesAfterEnv: ["jest-expect-message"],
+	setupFilesAfterEnv: ['jest-expect-message'],
 	reporters: [
 		'default',
 		[
@@ -21,12 +21,16 @@ module.exports = {
 			{
 				outputDirectory: 'result',
 				outputName: './test-result.xml',
-                ancestorSeparator: ' › ',
-                uniqueOutputName: 'false',
-                suiteNameTemplate: '{filepath}',
-                classNameTemplate: '{classname}',
-                titleTemplate: '{title}'
+				ancestorSeparator: ' › ',
+				uniqueOutputName: 'false',
+				suiteNameTemplate: '{filepath}',
+				classNameTemplate: '{classname}',
+				titleTemplate: '{title}'
 			}
-		]
-	]
+		],
+		'jest-html-reporters'
+	],
+	collectCoverage: true,
+	coverageReporters: ['text', 'html'],
+	coverageDirectory: 'coverage'
 };
