@@ -6,7 +6,7 @@
 		"lint": "eslint -c ./.eslintrc.js \"./**/*.ts\"",
 		"lint:fix": "npm run lint -- --fix",
 		"test:petstore": "jest petstore-api --reporters=default --reporters=jest-html-reporters",
-		"test:all": "jest --runInBand"
+		"test:all": "jest --reporters=default --reporters=jest-html-reporters --runInBand"
 	},
 	"keywords": [
 		"E2E",
