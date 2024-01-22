@@ -21,7 +21,8 @@ The different test 'packets' are located under `packages` folder.
 In most of the cases the setup would still be the same, something along the following lines to be run within the relevant pack:
 1. `nvm use`
 2. `npm ci` (or if adding new dependencies then `npm install`)
-3. `npm run test`
+3. `npm run test:pestore` - It will generate junit report in xml format at [result folder](packages/api/result/test-result.xml)
+4. `npm run test:petstore-html-report` - It will generate html report at [jest_html_reporters.html](packages/api/jest_html_reporters.html)
 
 ### Test Result
 1. Default reporter will print console log and Test status on console.
