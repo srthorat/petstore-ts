@@ -41,7 +41,7 @@ As an initial example `petstore-api.spec.ts` can be used.
 
 
 ## CI - GitHub Actions
-The GitHub actions workflow are found in this directory - [.github/workflows](../../.github/workflows)
+The GitHub actions workflow are found in this directory - [.github/workflows](.github/workflows)
 
 ### Running github action and see report
 1. Go to Actions tab - [Actions](https://github.com/srthorat/petstore-ts/actions)
