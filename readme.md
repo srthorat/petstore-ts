@@ -44,7 +44,7 @@ As an initial example `petstore-api.spec.ts` can be used.
 ## CI - GitHub Actions
 The GitHub actions workflow are found in this directory - [.github/workflows](.github/workflows)
 
-### Running github action and see report
+### Running github action and view report
 1. Go to Actions tab - [Actions](https://github.com/srthorat/petstore-ts/actions)
 2. From the left, below All workflows select the workflow - [PetStore API - E2E](https://github.com/srthorat/petstore-ts/actions/workflows/petstore-api-e2e.yml)
 3. A `Run workflow` dropdown will appear on the right, Select it, then choose `branch - main`, and click `Run Workflow`.
