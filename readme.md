@@ -41,6 +41,16 @@ As an initial example `petstore-api.spec.ts` can be used.
 
 
 ## CI - GitHub Actions
-
 The GitHub actions workflow are found in this directory - [.github/workflows](../../.github/workflows)
 
+### Running github action and see report
+1. Go to Actions tab - [Actions](https://github.com/srthorat/petstore-ts/actions)
+2. From the left, below All workflows select the workflow - [PetStore API - E2E](https://github.com/srthorat/petstore-ts/actions/workflows/petstore-api-e2e.yml)
+3. A `Run workflow` dropdown will appear on the right, Select it, then choose `branch - main`, and click `Run Workflow`.
+4. Refresh Page
+5. You can now see - `PetStore API - E2E` job is running, While completes, open Java CI with Maven to monitor the test
+   running status and view logs.
+6. Once the `PetStore API - E2E` job complete, the `PetStore Api Tests` job will start
+   running automatically, wait for it to complete.
+7. Once the `PetStore Api Tests` gets completes, double-click on job name. 
+8. You can see Status of run in html format

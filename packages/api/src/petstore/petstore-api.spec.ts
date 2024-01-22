@@ -37,8 +37,6 @@ describe('User Call Logs Suite', () => {
 		const allPetIds = response.body.map((item: { id: any }) => item.id);
 		randomPetId = allPetIds[Math.floor(Math.random() * allPetIds.length)];
 		console.log(`Random PET ID ${randomPetId} saved successfully.`);
-
-		await new Promise(r => setTimeout(r, 10000));
 	});
 
 	test('Pick a random Pet ID and update the details of the Pet using a PUT call.', async () => {
@@ -59,8 +57,6 @@ describe('User Call Logs Suite', () => {
 			`Successfully validated the response from the PUT API, Received Response code = ${putResponse.statusCode}.`
 		);
 		console.log('PUT request successful.');
-
-		await new Promise(r => setTimeout(r, 10000));
 	});
 
 	test('Use the same pet ID to GET the details of the pet using the pet ID.', async () => {
