@@ -50,7 +50,7 @@ The GitHub actions workflow are found in this directory - [.github/workflows](..
 4. Refresh Page
 5. You can now see - `PetStore API - E2E` job is running, While completes, open Java CI with Maven to monitor the test
    running status and view logs.
-6. Once the `PetStore API - E2E` job complete, the `PetStore Api Tests` job will start
+6. Once the `PetStore API - E2E` job complete, the `Report - PetStore Api Tests` job will start
    running automatically, wait for it to complete.
-7. Once the `PetStore Api Tests` gets completes, double-click on job name. 
+7. Once the `Report - PetStore Api Tests` gets completes, double-click on job name. 
 8. You can see Status of run in html format
