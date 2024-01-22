@@ -28,7 +28,13 @@ module.exports = {
 				titleTemplate: '{title}'
 			}
 		],
-		'jest-html-reporters'
+		[
+			'jest-html-reporter',
+			{
+				pageTitle: 'PET Store API Test Report',
+				includeConsoleLog: true
+			}
+		]
 	],
 	collectCoverage: true,
 	coverageReporters: ['text', 'html'],
