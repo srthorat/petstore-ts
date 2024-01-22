@@ -4,7 +4,7 @@ import { getBaseUrl } from '../commons/config/config-utils';
 import { Validator } from 'jsonschema';
 import { createUpdatePETPayload, petStoreApiSchema, updatePetAPISchema, UpdatePETPayload } from './petstore-api-utils';
 
-describe('User Call Logs Suite', () => {
+describe('Pet Store API Suite', () => {
 	const autBaseUrl = getBaseUrl();
 	const appRequest = request(autBaseUrl);
 	let randomPetId: any;

@@ -9,4 +9,5 @@ node_modules
 jest-html-reporters-attach
 coverage
 jest_html_reporters.html
-
+result
+test-report.html
